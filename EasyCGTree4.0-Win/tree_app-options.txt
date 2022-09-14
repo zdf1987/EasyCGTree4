@@ -1,0 +1,44 @@
+**************DO NOT CHANGE THE FILE NAME！ ******************
+
+===========================================================
+
+IQ-TREE Command-line=iqtree2.exe --alrt 1000 -B 1000
+
+
+NOTE: 
+1. Just change the part after "=".
+2. The input alignment (-s XXXX) will be specified automatically by EasyCGTree.
+
+
+IQ-TREE Command-line examples:
+
+1. Infer maximum-likelihood tree from a sequence alignment with the best-fit model automatically selected by ModelFinder:
+     iqtree2.exe
+
+2. Perform ModelFinder without subsequent tree inference:
+     iqtree2.exe -m MF
+
+3. Combine ModelFinder, tree search, ultrafast bootstrap and SH-aLRT test (default):
+     iqtree2.exe --alrt 1000 -B 1000
+
+4. Find best partition scheme followed by tree inference and bootstrap:
+     iqtree2.exe -p example.nex -m MFP+MERGE -B 1000
+
+
+5. For more options, please visit www.iqtree.org/ or use ".\bin\iqtree2.exe -h" to get helps.
+
+
+
+===========================================================
+
+FastTree Command-line=FastTree.exe
+
+NOTE: 
+1. FastTree is very fast and simple to use, and there is no other simple example to give.
+2. For more options, please visit http://www.microbesonline.org/fasttree/ or use ".\bin\FastTree.exe" to get helps.
+
+
+
+************** Reminder ******************
+
+If users are very familiar with the two applications, it is a better choice to use them (./bin/) directly since all input data prepared by EasyCGTree are available.
