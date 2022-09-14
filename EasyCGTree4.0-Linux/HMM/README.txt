@@ -1,0 +1,1 @@
+Build-in Profile HMM (HMM.zip) need to be downloaded separately from https://github.com/zdf1987/EasyCGTree4, decompress it and put .hmm files into this (HMM) folder.
