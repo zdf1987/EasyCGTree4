@@ -4,7 +4,7 @@ use strict;
 no warnings 'experimental::smartmatch';
 use File::Copy qw(move mv);
 use Getopt::Long;
-use List::MoreUtils qw/uniq/;
+
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
 my $rmon=$mon +1;
