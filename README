@@ -10,13 +10,13 @@ EasyCGTree is a Perl script, developed to construct genome-based Maximum-Likehoo
 How to install EasyCGTree? 
 After the downloaded package (https://github.com/zdf1987/EasyCGTree4; https://gitee.com/zdf1987/EasyCGTree4/releases) is decompressed and renamed (e.g. ‘…/Downloads/EasyCGTree’ for Linux; ‘/’ should be ‘\’ for Windows), no installation is required for EasyCGTree, beside installing Perl language environment. Other extra programs invoked by EasyCGTree had been included within the package. The following is a list of the extra programs:
 1) Perl (>v5.0): https://www.perl.org/ 
-2*) HMMER[1] (v3.0): http://hmmer.org/ 
-3*) FastTree[3] (>v2.0): http://www.microbesonline.org/fasttree/#Usage 
-4*) muscle[4] (v5): http://www.drive5.com/muscle/
-5*) consense[5,6] (v3.698): https://evolution.genetics.washington.edu/phylip.html
-6*) IQ-TREE[7] (>v2.0): http://www.iqtree.org/ 
-7*) trimAl[8] (v1.2): http://trimal.cgenomics.org/trimal?do=backlink 
-8*) astral-weighted[9] (v1.15.23): https://github.com/chaoszhang/ASTER/ 
+2*) HMMER (v3.0): http://hmmer.org/ 
+3*) FastTree (>v2.0): http://www.microbesonline.org/fasttree/#Usage 
+4*) muscle (v5): http://www.drive5.com/muscle/
+5*) consense (v3.698): https://evolution.genetics.washington.edu/phylip.html
+6*) IQ-TREE (>v2.0): http://www.iqtree.org/ 
+7*) trimAl (v1.2): http://trimal.cgenomics.org/trimal?do=backlink 
+8*) astral-weighted (v1.15.23): https://github.com/chaoszhang/ASTER/ 
 *: a version of these software had been included in the EasyCGTree package. For Linux version. Users may need to use “chmod +x filename” within folder ‘bin’ to make them executable. 
 Build-in Profile HMM need to be downloaded separately, and then decompress them and put .hmm files into ‘HMM’ folder.
 Experienced users can replace the included tools with precompiled up-to-date versions easily to update EasyCGTree, and we will update these tools and the main scripts aperiodically to ensure the longevity. We will also try to develop a version on MAC OS that is as portable as those on Windows and Linux. 
