@@ -1,31 +1,37 @@
+
 ====== EasyCGTree ======
-	Version 4.1
+	Version 4.2
 by Dao-Feng Zhang (Hohai University, China)
 
 EasyCGTree is An Easy Tool for Constructing Core-Gene Tree.
 
-EasyCGTree is a Perl script, developed to construct genome-based Maximum-Likehood (ML) phylogenetic tree, by taking microbial genomic data (proteome) in fasta format as input data. Profile hidden Markov models (HMMs) of core gene sets prepared in advance and enclosed in the package are used for homologs search by HMMER (http://hmmer.org/), and customized gene sets can also be used to build profile HMMs by EasyCGTree for homologs search. It has integrated all the steps needed between the input data and the resulted tree file into one Perl script, which would make it easier to infer a core-gene tree.
+EasyCGTree is a Perl script, developed to construct genome-based Maximum-Likehood (ML) phylogenetic tree, by taking microbial genomic data (protein and/or DNA sequences) in fasta format as input data. Profile hidden Markov models (HMMs) of core gene sets prepared in advance and enclosed in the package are used for homologs search by HMMER (http://hmmer.org/), and customized gene sets can also be used to build profile HMMs by EasyCGTree for homologs search. It has integrated all the steps needed between the input data and the resulted tree file into one Perl script, which would make it easier to infer a core-gene tree.
 
--=- How to install EasyCGTree?-=-  
-After the downloaded package (https://github.com/zdf1987/EasyCGTree4) is decompressed and renamed (e.g. ‘…/Downloads/EasyCGTree’ for Linux; ‘/’ should be ‘\’ for Windows), no installation is required for EasyCGTree, beside installing Perl language environment. Other extra programs invoked by EasyCGTree had been included within the package. The following is a list of the extra programs:
+How to install EasyCGTree? 
+After the downloaded package (https://github.com/zdf1987/EasyCGTree4; https://gitee.com/zdf1987/EasyCGTree4/releases) is decompressed and renamed (e.g. ‘…/Downloads/EasyCGTree’ for Linux; ‘/’ should be ‘\’ for Windows), no installation is required for EasyCGTree, beside installing Perl language environment. Other extra programs invoked by EasyCGTree had been included within the package. The following is a list of the extra programs:
 1) Perl (>v5.0): https://www.perl.org/ 
-2*) HMMER (v3.0): http://hmmer.org/ 
-3*) FastTree (>v2.0): http://www.microbesonline.org/fasttree/#Usage 
-4*) muscle (v3.8): http://www.drive5.com/muscle/（Windows only）
-5*) consense (v3.698): https://evolution.genetics.washington.edu/phylip.html
-6*) IQ-TREE (>v2.0): http://www.iqtree.org/ 
-7*) trimAl (v1.2): http://trimal.cgenomics.org/trimal?do=backlink 
-8*) Clustal Omega (>v1.2): http://www.clustal.org/（Linux only）
-9*) astral-hybrid (v1.15.23): https://github.com/chaoszhang/ASTER/ 
-*: a version of these software (2-9) had been included in the EasyCGTree package. For Linux version. Users may need to use “chmod +x filename” within folder ‘bin’ to make them executable. 
+2*) HMMER[1] (v3.0): http://hmmer.org/ 
+3*) FastTree[3] (>v2.0): http://www.microbesonline.org/fasttree/#Usage 
+4*) muscle[4] (v5): http://www.drive5.com/muscle/
+5*) consense[5,6] (v3.698): https://evolution.genetics.washington.edu/phylip.html
+6*) IQ-TREE[7] (>v2.0): http://www.iqtree.org/ 
+7*) trimAl[8] (v1.2): http://trimal.cgenomics.org/trimal?do=backlink 
+8*) astral-weighted[9] (v1.15.23): https://github.com/chaoszhang/ASTER/ 
+*: a version of these software had been included in the EasyCGTree package. For Linux version. Users may need to use “chmod +x filename” within folder ‘bin’ to make them executable. 
 Build-in Profile HMM need to be downloaded separately, and then decompress them and put .hmm files into ‘HMM’ folder.
 Experienced users can replace the included tools with precompiled up-to-date versions easily to update EasyCGTree, and we will update these tools and the main scripts aperiodically to ensure the longevity. We will also try to develop a version on MAC OS that is as portable as those on Windows and Linux. 
-EasyCGTree DO NOT support MAC OS currently.
 
-For the usage of EasyCGTree, please refer to the Manual.
+For the installation and usage of EasyCGTree, please refer to the Manual.
 
 There is also a brief tutorial in the Manual.
 
+
+-=- Change Log 4.2 -=-
+1. Employ prodigal for CDS prediction to support genomic DNA sequence as input.
+2. Replace astral-hybrid with astral-weighted to calculate supertree.
+3. Optimize the command line setting and layout of output.
+4. Use MUSCLE V5 as the MSA tool for both Windows and Linux version.
+5. Fix several bugs that might occur in some condition.
 
 -=- Change Log 4.1 -=-
 1. Add ASTRAL to reconstruct popular supertree.
@@ -40,7 +46,7 @@ There is also a brief tutorial in the Manual.
 5. Retire SNP- and nucleotide-based tree-making approaches.
 
 -=- Change Log 3.1 -=-
-1. Add support of tree inference of SNPs and supertree aproaches.
+1. Add supportance of tree inference using SNPs and supertree aproaches.
 2. Optimize the command line setting and ERROR report.
 
 
